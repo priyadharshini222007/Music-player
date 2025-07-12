@@ -1,0 +1,109 @@
+body {
+  background: lightslategray;
+  font-family: 'Segoe UI', sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  background: lightcyan;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.cover img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.controls button {
+  background: #282828;
+  border: none;
+  color: white;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #535353;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.volume {
+  margin-top: 10px;
+}
+
+.download {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#downloadBtn {
+  text-decoration: none;
+  color: white;
+  background: #444;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+#downloadBtn:hover {
+  background: #666;
+}
+
+/* Theme toggle button */
+.mode-toggle {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#modeToggle {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#modeToggle:hover {
+  background: #555;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .player {
+  background: #1f1f1f;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .controls button,
+body.dark-mode #modeToggle {
+  background: #333;
+  color: #fff;
+}
+
+body.dark-mode .controls button:hover,
+body.dark-mode #modeToggle:hover {
+  background: #555;
+}
